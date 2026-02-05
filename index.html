@@ -3,148 +3,212 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>1App Media | Performance Marketing for Mobile Apps</title>
+  <title>1App Media | Performance Marketing Agency</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f7f9fc;
-      color: #222;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
     }
-    header {
-      background: linear-gradient(135deg, #1b4fd8, #2bb0ff);
-      color: #fff;
-      padding: 70px 20px;
-      text-align: center;
+
+    body{
+      background:#f6f8fc;
+      color:#222;
+      line-height:1.7;
     }
-    header h1 {
-      margin: 0;
-      font-size: 44px;
+
+    /* HERO */
+    .hero{
+      background:linear-gradient(135deg,#1e3cff,#3aa6ff);
+      color:#fff;
+      padding:100px 20px;
+      text-align:center;
     }
-    header p {
-      font-size: 18px;
-      margin-top: 12px;
+
+    .hero img{
+      width:140px;
+      margin-bottom:25px;
     }
-    section {
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: auto;
+
+    .hero h1{
+      font-size:44px;
+      margin-bottom:12px;
+      font-weight:700;
     }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
+
+    .hero p{
+      font-size:18px;
+      max-width:750px;
+      margin:auto;
+      opacity:0.95;
     }
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: center;
+
+    /* SECTION */
+    .section{
+      padding:80px 20px;
+      max-width:1200px;
+      margin:auto;
     }
-    .card h3 {
-      margin-bottom: 10px;
-      color: #1b4fd8;
+
+    .section h2{
+      text-align:center;
+      font-size:34px;
+      margin-bottom:50px;
+      font-weight:600;
     }
-    .about, .team {
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      padding: 30px;
+
+    /* SERVICES */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
     }
-    .team-member {
-      margin-bottom: 20px;
+
+    .card{
+      background:#fff;
+      padding:35px;
+      border-radius:16px;
+      box-shadow:0 12px 35px rgba(0,0,0,0.08);
+      transition:.3s;
     }
-    .team-member h3 {
-      margin-bottom: 5px;
-      color: #1b4fd8;
+
+    .card:hover{
+      transform:translateY(-8px);
     }
-    .contact {
-      text-align: center;
+
+    .card h3{
+      margin-bottom:14px;
+      color:#1e3cff;
+      font-size:20px;
     }
-    .contact a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      background: #1b4fd8;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
+
+    /* ABOUT */
+    .about{
+      background:#fff;
+      padding:45px;
+      border-radius:16px;
+      box-shadow:0 12px 35px rgba(0,0,0,0.06);
+      text-align:center;
+      font-size:17px;
     }
-    footer {
-      background: #0f172a;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
+
+    /* MMP */
+    .mmp{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:25px;
+      margin-top:30px;
+    }
+
+    .mmp div{
+      background:#fff;
+      padding:30px;
+      border-radius:14px;
+      text-align:center;
+      font-weight:600;
+      font-size:18px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.06);
+    }
+
+    /* CTA */
+    .cta{
+      background:linear-gradient(135deg,#3aa6ff,#1e3cff);
+      color:#fff;
+      text-align:center;
+      padding:70px 20px;
+      margin-top:60px;
+    }
+
+    .cta h2{
+      font-size:32px;
+      margin-bottom:12px;
+    }
+
+    .cta p{
+      font-size:17px;
+      opacity:.95;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#0f172a;
+      color:#cbd5e1;
+      text-align:center;
+      padding:25px;
+      font-size:14px;
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>1App Media</h1>
-  <p>Performance Marketing for Mobile App Campaigns</p>
-</header>
+  <!-- HERO -->
+  <section class="hero">
+    <img src="logo.png" alt="1App Media Logo">
+    <h1>1App Media</h1>
+    <p>Performance Marketing Agency Driving Scalable Growth for Mobile Apps</p>
+  </section>
 
-<section>
-  <h2 style="text-align:center;">Our Core Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Mobile Performance Marketing</h3>
-      <p>ROI-driven paid campaigns focused on CPI, CPA & ROAS.</p>
-    </div>
-    <div class="card">
-      <h3>User Acquisition</h3>
-      <p>High-quality Android & iOS installs at scale.</p>
-    </div>
-    <div class="card">
-      <h3>Campaign Optimization</h3>
-      <p>Continuous optimization for better retention & conversions.</p>
-    </div>
-    <div class="card">
-      <h3>Scaling & Growth</h3>
-      <p>Data-backed strategies to scale profitable mobile campaigns.</p>
-    </div>
-  </div>
-</section>
+  <!-- SERVICES -->
+  <section class="section">
+    <h2>Our Core Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mobile Performance Marketing</h3>
+        <p>ROI-driven paid campaigns focused on CPI, CPA and ROAS optimization.</p>
+      </div>
 
-<section>
-  <h2 style="text-align:center;">About Us</h2>
-  <div class="about">
-    <p>
-      1App Media is a performance marketing agency specializing in mobile app campaigns.
-      We help apps grow through measurable results, smart media buying, and continuous
-      optimization across performance channels.
-    </p>
-  </div>
-</section>
+      <div class="card">
+        <h3>User Acquisition</h3>
+        <p>High-quality Android & iOS installs at scale across premium channels.</p>
+      </div>
 
-<section>
-  <h2 style="text-align:center;">Leadership</h2>
-  <div class="team">
-    <div class="team-member">
-      <h3>Harshit Kumar</h3>
-      <p><strong>Founder</strong></p>
-      <p>📞 +91 7081216828</p>
+      <div class="card">
+        <h3>Campaign Optimization</h3>
+        <p>Continuous optimization for higher retention, LTV and conversions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Scaling & Growth</h3>
+        <p>Proven frameworks to scale profitable app campaigns globally.</p>
+      </div>
     </div>
-    <div class="team-member">
-      <h3>Mohit Sharma</h3>
-      <p><strong>Co-Founder</strong></p>
-      <p>📞 +91 7084351560</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>About 1App Media</h2>
+    <div class="about">
+      1App Media is a performance-focused marketing agency helping mobile apps grow through
+      measurable results, smart media buying and advanced analytics across channels.
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="contact">
-  <h2>Contact Us</h2>
-  <p>Email: <strong>info@1appmedia.co</strong></p>
-  <a href="mailto:info@1appmedia.co">Get in Touch</a>
-</section>
+  <!-- MMP -->
+  <section class="section">
+    <h2>Live MMP & Tracking Solutions</h2>
+    <div class="mmp">
+      <div>AppsFlyer</div>
+      <div>Adjust</div>
+      <div>Singular</div>
+      <div>Branch</div>
+    </div>
+  </section>
 
-<footer>
-  © 2026 1App Media. All rights reserved.
-</footer>
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Scale Your App?</h2>
+    <p>Partner with us to unlock data-driven, profitable growth.</p>
+  </section>
+
+  <footer>
+    © 2026 1App Media. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
