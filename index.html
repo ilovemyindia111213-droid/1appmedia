@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>1App Media | Performance Marketing Agency</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -22,7 +21,6 @@
       line-height:1.7;
     }
 
-    /* HERO */
     .hero{
       background:linear-gradient(135deg,#1e3cff,#3aa6ff);
       color:#fff;
@@ -45,10 +43,8 @@
       font-size:18px;
       max-width:750px;
       margin:auto;
-      opacity:0.95;
     }
 
-    /* SECTION */
     .section{
       padding:80px 20px;
       max-width:1200px;
@@ -59,10 +55,8 @@
       text-align:center;
       font-size:34px;
       margin-bottom:50px;
-      font-weight:600;
     }
 
-    /* SERVICES */
     .cards{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -74,35 +68,25 @@
       padding:35px;
       border-radius:16px;
       box-shadow:0 12px 35px rgba(0,0,0,0.08);
-      transition:.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-8px);
     }
 
     .card h3{
-      margin-bottom:14px;
       color:#1e3cff;
-      font-size:20px;
+      margin-bottom:12px;
     }
 
-    /* ABOUT */
     .about{
       background:#fff;
       padding:45px;
       border-radius:16px;
-      box-shadow:0 12px 35px rgba(0,0,0,0.06);
       text-align:center;
-      font-size:17px;
+      box-shadow:0 12px 35px rgba(0,0,0,0.06);
     }
 
-    /* MMP */
     .mmp{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
       gap:25px;
-      margin-top:30px;
     }
 
     .mmp div{
@@ -111,104 +95,100 @@
       border-radius:14px;
       text-align:center;
       font-weight:600;
-      font-size:18px;
       box-shadow:0 8px 25px rgba(0,0,0,0.06);
     }
 
-    /* CTA */
+    .campaigns{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+      gap:25px;
+    }
+
+    .campaign{
+      background:#fff;
+      padding:25px;
+      border-radius:14px;
+      text-align:center;
+      box-shadow:0 8px 25px rgba(0,0,0,0.06);
+    }
+
+    .campaign img{
+      max-width:110px;
+    }
+
     .cta{
       background:linear-gradient(135deg,#3aa6ff,#1e3cff);
       color:#fff;
-      text-align:center;
       padding:70px 20px;
-      margin-top:60px;
+      text-align:center;
     }
 
-    .cta h2{
-      font-size:32px;
-      margin-bottom:12px;
-    }
-
-    .cta p{
-      font-size:17px;
-      opacity:.95;
-    }
-
-    /* FOOTER */
     footer{
       background:#0f172a;
       color:#cbd5e1;
-      text-align:center;
       padding:25px;
+      text-align:center;
       font-size:14px;
+    }
+
+    footer a{
+      color:#38bdf8;
+      text-decoration:none;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <img src="logo.png" alt="1App Media Logo">
-    <h1>1App Media</h1>
-    <p>Performance Marketing Agency Driving Scalable Growth for Mobile Apps</p>
-  </section>
+<section class="hero">
+  <img src="logo.png" alt="1App Media">
+  <h1>1App Media</h1>
+  <p>Performance Marketing Agency Driving Scalable Growth for Mobile Apps</p>
+</section>
 
-  <!-- SERVICES -->
-  <section class="section">
-    <h2>Our Core Services</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Mobile Performance Marketing</h3>
-        <p>ROI-driven paid campaigns focused on CPI, CPA and ROAS optimization.</p>
-      </div>
+<section class="section">
+  <h2>Our Core Services</h2>
+  <div class="cards">
+    <div class="card"><h3>Performance Marketing</h3><p>ROI focused campaigns.</p></div>
+    <div class="card"><h3>User Acquisition</h3><p>High quality installs.</p></div>
+    <div class="card"><h3>Campaign Optimization</h3><p>Data-driven scaling.</p></div>
+    <div class="card"><h3>Growth Strategy</h3><p>Profitable global growth.</p></div>
+  </div>
+</section>
 
-      <div class="card">
-        <h3>User Acquisition</h3>
-        <p>High-quality Android & iOS installs at scale across premium channels.</p>
-      </div>
+<section class="section">
+  <h2>Live MMP & Tracking</h2>
+  <div class="mmp">
+    <div>AppsFlyer</div>
+    <div>Adjust</div>
+    <div>Singular</div>
+    <div>Branch</div>
+  </div>
+</section>
 
-      <div class="card">
-        <h3>Campaign Optimization</h3>
-        <p>Continuous optimization for higher retention, LTV and conversions.</p>
-      </div>
+<section class="section">
+  <h2>Our Top Performing Campaigns</h2>
+  <div class="campaigns">
+    <div class="campaign"><img src="mb-bank.png"></div>
+    <div class="campaign"><img src="techcombank.png"></div>
+    <div class="campaign"><img src="be.png"></div>
+    <div class="campaign"><img src="moneyman.png"></div>
+    <div class="campaign"><img src="parimatch.png"></div>
+    <div class="campaign"><img src="megapari.png"></div>
+    <div class="campaign"><img src="msport.png"></div>
+    <div class="campaign"><img src="fxpro.png"></div>
+  </div>
+</section>
 
-      <div class="card">
-        <h3>Scaling & Growth</h3>
-        <p>Proven frameworks to scale profitable app campaigns globally.</p>
-      </div>
-    </div>
-  </section>
+<section class="cta">
+  <h2>Ready to Scale Your App?</h2>
+  <p>Partner with us for performance-driven growth.</p>
+</section>
 
-  <!-- ABOUT -->
-  <section class="section">
-    <h2>About 1App Media</h2>
-    <div class="about">
-      1App Media is a performance-focused marketing agency helping mobile apps grow through
-      measurable results, smart media buying and advanced analytics across channels.
-    </div>
-  </section>
-
-  <!-- MMP -->
-  <section class="section">
-    <h2>Live MMP & Tracking Solutions</h2>
-    <div class="mmp">
-      <div>AppsFlyer</div>
-      <div>Adjust</div>
-      <div>Singular</div>
-      <div>Branch</div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Ready to Scale Your App?</h2>
-    <p>Partner with us to unlock data-driven, profitable growth.</p>
-  </section>
-
-  <footer>
-    © 2026 1App Media. All Rights Reserved.
-  </footer>
+<footer>
+  © 2026 1App Media<br>
+  Contact: <a href="mailto:Sales@1appmedia.co">Sales@1appmedia.co</a>
+</footer>
 
 </body>
 </html>
